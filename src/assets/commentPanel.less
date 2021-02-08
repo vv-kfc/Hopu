@@ -1,0 +1,37 @@
+.comment_panel {
+    display: flex;
+    padding: 4.167vw;
+    font-size: 3.611vw;
+    .left {
+      width: 11.667vw;
+      height: 11.667vw;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 2.778vw;
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      flex: 1;
+      // 弹性盒模型内容会无限撑开盒子，需要溢出隐藏
+      overflow: hidden;
+      .header {
+        display: flex;
+        height: 6.667vw;
+        justify-content: space-between;
+        color: #999;
+        font-size: 3.333vw;
+      }
+      .content {
+        line-height: 5.556vw;
+        // 内容过长时强制换行 配合父盒子的溢出隐藏使用
+        overflow-wrap: break-word;
+      }
+      .reply {
+        color: #999;
+        font-size: 3.333vw;
+        text-align: right;
+      }
+    }
+  }
